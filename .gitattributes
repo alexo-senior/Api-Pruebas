@@ -1,0 +1,11 @@
+# Trata archivos de video como binarios
+*.mp4 binary
+*.mpeg4 binary
+*.MPEG-4 binary
+*.MP4 binary
+
+# Opcional: trata todos los archivos binarios sin conversión de finales de línea
+*.avi binary
+*.mov binary
+*.mkv binary
+*.webm binary

@@ -5,6 +5,7 @@ import pprint
 if  __name__ == '__main__':
     #solo que es voideo y debe ser mp4 extension
     url = 'https://videos.pexels.com/video-files/32114960/13691527_1440_2560_60fps.mp4'
+    #url = 'https://www.youtube.com/shorts/UsfluVSgdU8'
     #realiza la peticion sin descargar el contenido con la conexion abierta
     response = requests.get(url, stream=True)
     #descargar la imagen
@@ -18,3 +19,6 @@ if  __name__ == '__main__':
                 file.write(video)
     #cierra la conexion
     response.close()
+    
+    
+    
