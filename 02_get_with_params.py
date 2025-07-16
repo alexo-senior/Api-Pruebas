@@ -1,6 +1,6 @@
 import requests 
 
-
+#MODELO CON PARAMETROS
 
 if __name__ == "__main__":
     url = "http://httpbin.org/get?nombre=Alexis&curso=Python"

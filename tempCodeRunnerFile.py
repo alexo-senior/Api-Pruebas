@@ -1,1 +1,1 @@
-https://rickandmortyapi.com/
+https://dragonball-api.com/api/characters/

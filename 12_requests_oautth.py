@@ -25,10 +25,10 @@ print("AUTH_URL:", AUTH_URL)
 print("REDIRECT_URI:", REDIRECT_URI)
 print("CLIENT_ID:", CLIENT_ID)
 
-# === Variable global para capturar el código de autorización ===
+#  Variable global para capturar el código de autorización 
 authorization_code = None
 
-# === Servidor HTTP que captura el código ===
+#  Servidor HTTP que captura el código 
 class OAuthHandler(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
         global authorization_code
@@ -47,7 +47,7 @@ class OAuthHandler(http.server.BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write("Error: No se recibió el código.".encode('utf-8'))
 
-# === Abre el navegador para autorizar ===
+#  Abre el navegador para autorizar 
 def open_authorization_url():
     params = {
         "client_id": CLIENT_ID,

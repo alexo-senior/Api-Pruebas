@@ -9,7 +9,7 @@ if __name__ == "__main__":
     response = requests.get(url)
     
     if response.status_code == 200:
-        
+        #DEVUELVE EL CONTENIDO
         content = response.content
         
         #guardar el archiuvo en formato html 
